@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ffd6855466119974fbb6dbd4b66c1615
+guid: 0e8d9164b26324c47bdac9f525cd8e99
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,7 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dapao_0
+      name: IMG_2980_4
       rect:
         serializedVersion: 2
-        x: 1241
-        y: 101
-        width: 553
-        height: 473
+        x: 146
+        y: 395
+        width: 1161
+        height: 997
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6e92197bb297bd49a260a02d754b64f
-      internalID: -1927789759
+      spriteID: 6436a0fb5d5d30d41928be1893ec00f4
+      internalID: 809225999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_2980_5
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1083
+        width: 126
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fa9f8724e11b94db7a5889e06037fa
+      internalID: -1996423422
       vertices: []
       indices: 
       edges: []
@@ -167,7 +188,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dapao_0: -1927789759
+      IMG_2980_0: -1055380926
+      IMG_2980_1: 2100745510
+      IMG_2980_2: 110430046
+      IMG_2980_3: -1739477890
+      IMG_2980_4: 809225999
+      IMG_2980_5: -1996423422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

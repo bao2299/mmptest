@@ -11,6 +11,7 @@ public class Slingshot : MonoBehaviour
     private Transform leftPoint;
     private Transform rightPoint;
     private Transform centerPoint;
+    public Transform centerPos;
 
     private bool isDrawing = false;
     private Transform birdTransform;
@@ -25,6 +26,7 @@ public class Slingshot : MonoBehaviour
         leftPoint = transform.Find("LeftPoint");
         rightPoint = transform.Find("RightPoint");
         centerPoint = transform.Find("CenterPoint");
+        centerPos = transform.Find("CenterPos");
     }
 
     // Start is called before the first frame update
@@ -63,8 +65,8 @@ public class Slingshot : MonoBehaviour
         leftLineRenderer.SetPosition(0, birdPosition);
         leftLineRenderer.SetPosition(1, leftPoint.position);
 
-        rightLineRenderer.SetPosition(0, birdPosition);
-        rightLineRenderer.SetPosition(1, rightPoint.position);
+        //rightLineRenderer.SetPosition(0, birdPosition);
+        //rightLineRenderer.SetPosition(1, rightPoint.position);
     }
 
     public Vector3 getCenterPositon()
@@ -74,12 +76,12 @@ public class Slingshot : MonoBehaviour
 
     private void HideLine()
     {
-        rightLineRenderer.enabled = false;
+        //rightLineRenderer.enabled = false;
         leftLineRenderer.enabled = false;
     }
     private void ShowLine()
     {
-        rightLineRenderer.enabled = true;
+        //rightLineRenderer.enabled = true;
         leftLineRenderer.enabled = true;
     }
 

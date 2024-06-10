@@ -64,7 +64,8 @@ public class Bird : MonoBehaviour
         if (state == BirdState.BeforeShoot && EventSystem.current.IsPointerOverGameObject()==false )
         {
             isMouseDown = true;
-            Slingshot.Instance.StartDraw(transform);
+           // Slingshot.Instance.StartDraw(transform);
+            Slingshot.Instance.StartDraw(Slingshot.Instance.centerPos);
             AudioManager.Instance.PlayBirdSelect(transform.position);
         }
     }
@@ -83,7 +84,8 @@ public class Bird : MonoBehaviour
     {
         if (isMouseDown)
         {
-            transform.position = GetMousePosition();
+            // transform.position = GetMousePosition();
+            Slingshot.Instance.centerPos.position = GetMousePosition();
         }
     }
 
@@ -108,7 +110,8 @@ public class Bird : MonoBehaviour
     {
         rgd.bodyType = RigidbodyType2D.Dynamic;
 
-        rgd.velocity = (Slingshot.Instance.getCenterPositon() - transform.position).normalized * flySpeed;
+        //rgd.velocity = (Slingshot.Instance.getCenterPositon() - transform.position).normalized * flySpeed;
+        rgd.velocity = (Slingshot.Instance.getCenterPositon() - Slingshot.Instance.centerPos.position).normalized * flySpeed;
         state = BirdState.AfterShoot;
 
         AudioManager.Instance.PlayBirdFlying(transform.position);
